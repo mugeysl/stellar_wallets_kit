@@ -1,0 +1,1 @@
+D:\github\stellar_wallets_kit\contracts\hello-world\target\wasm32v1-none\release\hello_world.wasm: D:\github\stellar_wallets_kit\contracts\hello-world\src\lib.rs D:\github\stellar_wallets_kit\contracts\hello-world\src\test.rs

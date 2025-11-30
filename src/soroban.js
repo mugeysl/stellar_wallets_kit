@@ -1,0 +1,2 @@
+export const CONTRACT_ID = "CDGZZCRVL4NWNCB2G7YXS3W225KINI2XUKE6BV25AOQG7T3GBMHXCM3S"; // buraya gerçek id
+export const NETWORK = "testnet";

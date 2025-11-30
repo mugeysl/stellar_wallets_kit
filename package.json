@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@creit-tech/stellar-wallets-kit": "jsr:2.0.0-beta.6",
+    "@stellar/stellar-sdk": "^13.3.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4",
-    "@stellar/stellar-sdk": "13.3.0"  
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import {
-  StellarWalletsKit,
-  WalletNetwork,
-  FREIGHTER_ID,
-  FreighterModule,
-} from '@creit.tech/stellar-wallets-kit';
+import { StellarWalletsKit } from '@creit-tech/stellar-wallets-kit/sdk';
+import { defaultModules } from '@creit-tech/stellar-wallets-kit/modules/utils';
 import './stellarwalletconnection.css';
 import stellarLogo from "../../assets/stellar-xlm-logo.svg";
 import FetchAssets from '../../modules/FetchAssets';
@@ -14,30 +10,37 @@ const StellarWalletConnection = ({ onConnect }) => {
   const [assets, setAssets] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const kit = new StellarWalletsKit({
-    network: WalletNetwork.TESTNET,
-    selectedWalletId: FREIGHTER_ID,
-    modules: [new FreighterModule()],
-  });
+  useEffect(() => {
+    // Start the kit once in the browser
+    if (typeof window !== 'undefined') {
+      try {
+        StellarWalletsKit.init({ modules: defaultModules() });
+      } catch (e) {
+        // init may throw if already initialized -- ignore
+      }
+    }
+  }, []);
 
   const connectWallet = async () => {
-    await kit.openModal({
-      onWalletSelected: async (option) => {
-        kit.setWallet(option.id);
-        const { address } = await kit.getAddress();
+    try {
+      const { address } = await StellarWalletsKit.authModal();
+      if (address) {
         setConnectedWalletPublicKey(address);
-        onConnect({ publicKey: address, kit });
+        onConnect({ publicKey: address, kit: StellarWalletsKit });
       }
-    });
+    } catch (err) {
+      // user probably dismissed modal or no wallet available
+      console.warn('Auth modal closed or failed', err);
+    }
   };
 
   useEffect(() => {
     const fetchConnectedWallet = async () => {
       try {
-        const { address } = await kit.getAddress();
+        const { address } = await StellarWalletsKit.getAddress();
         if (address) {
           setConnectedWalletPublicKey(address);
-          onConnect({ publicKey: address, kit });
+          onConnect({ publicKey: address, kit: StellarWalletsKit });
         }
       } catch (error) {
         // Wallet not connected yet

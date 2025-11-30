@@ -1,0 +1,14 @@
+D:\github\stellar_wallets_kit\contracts\hello-world\target\release\deps\serde-0dff542d295d8e44.d: C:\Users\yisil\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs C:\Users\yisil\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs C:\Users\yisil\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs C:\Users\yisil\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs C:\Users\yisil\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs D:\github\stellar_wallets_kit\contracts\hello-world\target\release\build\serde-565e6e0cfeb1ccc7\out/private.rs
+
+D:\github\stellar_wallets_kit\contracts\hello-world\target\release\deps\libserde-0dff542d295d8e44.rlib: C:\Users\yisil\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs C:\Users\yisil\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs C:\Users\yisil\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs C:\Users\yisil\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs C:\Users\yisil\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs D:\github\stellar_wallets_kit\contracts\hello-world\target\release\build\serde-565e6e0cfeb1ccc7\out/private.rs
+
+D:\github\stellar_wallets_kit\contracts\hello-world\target\release\deps\libserde-0dff542d295d8e44.rmeta: C:\Users\yisil\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs C:\Users\yisil\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs C:\Users\yisil\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs C:\Users\yisil\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs C:\Users\yisil\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs D:\github\stellar_wallets_kit\contracts\hello-world\target\release\build\serde-565e6e0cfeb1ccc7\out/private.rs
+
+C:\Users\yisil\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs:
+C:\Users\yisil\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs:
+C:\Users\yisil\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs:
+C:\Users\yisil\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs:
+C:\Users\yisil\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs:
+D:\github\stellar_wallets_kit\contracts\hello-world\target\release\build\serde-565e6e0cfeb1ccc7\out/private.rs:
+
+# env-dep:OUT_DIR=D:\\github\\stellar_wallets_kit\\contracts\\hello-world\\target\\release\\build\\serde-565e6e0cfeb1ccc7\\out
